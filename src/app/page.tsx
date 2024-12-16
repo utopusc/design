@@ -12,12 +12,16 @@ import Problem from "@/components/sections/problem";
 import Solution from "@/components/sections/solution";
 import Testimonials from "@/components/sections/testimonials";
 import TestimonialsCarousel from "@/components/sections/testimonials-carousel";
+import Meteors from "@/components/ui/meteors";
 
 export default function Home() {
   return (
     <main>
       <Header />
+      <div className="relative flex h-[1200px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background color">
+        <Meteors number={40}/>
       <Hero />
+      </div>
       <Logos />
       <Problem />
       <Solution />

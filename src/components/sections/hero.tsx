@@ -8,6 +8,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
+
 const ease = [0.16, 1, 0.3, 1];
 
 function HeroPill() {
