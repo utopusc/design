@@ -4,6 +4,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { cn, constructMetadata } from "@/lib/utils";
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import Navbar from "@/components/navbar";
 
 export const metadata: Metadata = constructMetadata({});
 
@@ -37,8 +38,9 @@ export default function RootLayout({
           enableSystem={false}
         >
           {children}
-          <ThemeToggle />
-          <TailwindIndicator />
+          <div className="fixed bottom-0 left-0 right-0 z-50 border-none">
+            <Navbar />
+          </div>
         </ThemeProvider>
       </body>
     </html>

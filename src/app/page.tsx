@@ -13,12 +13,13 @@ import Solution from "@/components/sections/solution";
 import Testimonials from "@/components/sections/testimonials";
 import TestimonialsCarousel from "@/components/sections/testimonials-carousel";
 import Meteors from "@/components/ui/meteors";
+import { Dock } from "@/components/ui/dock";
 
 export default function Home() {
   return (
     <main>
       <Header />
-      <div className="relative flex h-[1200px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background color">
+      <div className="relative flex h-[1200px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border-none bg-background color">
         <Meteors number={40}/>
       <Hero />
       </div>

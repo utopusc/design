@@ -14,17 +14,17 @@ const ease = [0.16, 1, 0.3, 1];
 function HeroPill() {
   return (
     <motion.a
-      href="/blog/introducing-acme-ai"
+      href="/portfolio"
       className="flex w-auto items-center space-x-2 rounded-full bg-primary/20 px-2 py-1 ring-1 ring-accent whitespace-pre"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease }}
     >
       <div className="w-fit rounded-full bg-accent px-2 py-0.5 text-center text-xs font-medium text-primary sm:text-sm">
-        📣 Announcement
+      📎 Check Out
       </div>
       <p className="text-xs font-medium text-primary sm:text-sm">
-        Introducing Acme.ai
+        Our Portfolio
       </p>
       <svg
         width="12"
@@ -47,7 +47,7 @@ function HeroTitles() {
   return (
     <div className="flex w-full max-w-2xl flex-col space-y-4 overflow-hidden pt-8">
       <motion.h1
-        className="text-center text-4xl font-medium leading-tight text-foreground sm:text-5xl md:text-6xl"
+        className="text-center text-4xl font-medium leading-tight text-foreground sm:text-5xl md:text-6xl "
         initial={{ filter: "blur(10px)", opacity: 0, y: 50 }}
         animate={{ filter: "blur(0px)", opacity: 1, y: 0 }}
         transition={{
@@ -56,7 +56,7 @@ function HeroTitles() {
           staggerChildren: 0.2,
         }}
       >
-        {["Automate", "your", "workflow", "with AI"].map((text, index) => (
+        {["Creative", "Minds,", "Smart Solutions"].map((text, index) => (
           <motion.span
             key={index}
             className="inline-block px-1 md:px-2 text-balance font-semibold"
@@ -82,7 +82,7 @@ function HeroTitles() {
           ease,
         }}
       >
-        No matter what problem you have, our AI can help you solve it.
+        Creative design and efficient development tailored for your business needs.
       </motion.p>
     </div>
   );
@@ -105,7 +105,7 @@ function HeroCTA() {
           )}
         >
           <Icons.logo className="h-6 w-6" />
-          Get started for free
+          Get a Free Quote Today
         </Link>
       </motion.div>
       <motion.p
@@ -114,7 +114,7 @@ function HeroCTA() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.0, duration: 0.8 }}
       >
-        7 day free trial. No credit card required.
+        Let's Work Together
       </motion.p>
     </>
   );

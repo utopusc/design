@@ -1,4 +1,4 @@
-import { getBlogPosts } from "@/lib/blog";
+import { getBlogPosts } from "@/lib/portfolio";
 import { MetadataRoute } from "next";
 import { headers } from "next/headers";
 
@@ -14,7 +14,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
     },
     ...allPosts.map((post) => ({
-      url: `${protocol}://${domain}/blog/${post.slug}`,
+      url: `${protocol}://${domain}/portfolio/${post.slug}`,
       lastModified: new Date(),
     })),
   ];
